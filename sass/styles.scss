@@ -1,0 +1,260 @@
+/* Imports */
+@font-face {
+  font-family: 'Roboto-Regular';
+  local: 'Roboto';
+  src: url('../fonts/Roboto-Regular-webfont.eot');
+  src: url('../fonts/Roboto-Regular-webfont.eot') format('eot'),
+      url('../fonts/Roboto-Regular-webfont.woff') format('woff'),
+      url('../fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+      url('../fonts/Roboto-Regular-webfont.svg') format('svg');
+
+  font-family: 'Roboto-Medium';
+  local: 'Roboto';
+  src: url('../fonts/Roboto-Medium-webfont.eot');
+  src: url('../fonts/Roboto-Medium-webfont.eot') format('eot'),
+      url('../fonts/Roboto-Medium-webfont.woff') format('woff'),
+      url('../fonts/Roboto-Medium-webfont.ttf') format('truetype'),
+      url('../fonts/Roboto-Medium-webfont.svg') format('svg');
+
+  font-family: 'Roboto-Bold';
+  local: 'Roboto';
+  src: url('../fonts/Roboto-Bold-webfont.eot');
+  src: url('../fonts/Roboto-Bold-webfont.eot') format('eot'),
+      url('../fonts/Roboto-Bold-webfont.woff') format('woff'),
+      url('../fonts/Roboto-Bold-webfont.ttf') format('truetype'),
+      url('../fonts/Roboto-Bold-webfont.svg') format('svg');
+
+
+}
+/* Variables */
+
+
+/* Styles */
+body {
+  font-family: 'Roboto-Regular', sans-serif;
+  color: white;
+  font-size: 1vw;
+}
+
+.parallax-img {
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+nav {
+  position: absolute;
+  display: block;
+  z-index: 1;
+  padding: 1vw 2vw 1vw 1vw;
+  img {
+    width: 5.5em;
+    vertical-align: middle;
+  }
+  a {
+    float: right;
+    font-size: 1.3em;
+    margin-right: 1.2vw;
+    padding: 0 .5vw;
+    text-transform: uppercase;
+  }
+  .animation {
+    color: #fff;
+    position: relative;
+  }
+
+  .animation:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 10px;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.275s ease-in-out 0s;
+    transition: all 0.275s ease-in-out 0s;
+  }
+
+  .animation:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+
+header.para1 {
+  background-image: url(../images/roads.jpg);
+  height: 100vh;
+  width: 100%;
+  opacity: .95;
+  div.header-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 45vh;
+    text-transform: uppercase;
+    h3 {
+      font-size: 1.2em;
+      margin: 0;
+      letter-spacing: .5em;
+      font-weight: bold;
+    }
+    h1 {
+      font-size: 4.5em;
+      margin: 0;
+      letter-spacing: .95em;
+      font-weight: bold;
+    }
+  }
+  div.arrow {
+    position: relative;
+    font-size: 2.8em;
+    color: white;
+    text-align: center;
+    top: 42vh;
+    right: .4em;
+    svg {
+      position: absolute;
+      animation: bouncing 1.2s infinite ease-in-out;
+    }
+  }
+}
+@keyframes bouncing {
+  0% {bottom: 0;}
+  50% {bottom: 20px;}
+  100% {bottom: 0;}
+}
+
+main {
+  section#about {
+    background-color: #fffaf2;
+    p.flow-text {
+      margin: 0;
+      font-size: 1.4em;
+      padding: 3em 10em;
+      text-align: center;
+      color:#343144;
+      letter-spacing: .21em;
+      line-height: 1.85em;
+      text-transform: uppercase;
+    }
+  }
+
+  div.para2 {
+    background-image: url('../images/ocean.jpg');
+    height: 80vh;
+  }
+
+  section.website-designs {
+    background-color: #82CFC7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-basis: 100%;
+
+    h2.title {
+      width: 100%;
+      text-align: center;
+      flex-basis: 100%;
+      margin: 0;
+      padding-top: .2em;
+      padding-bottom: .2em;
+      font-size: 3.8em;
+    }
+    div.design {
+      margin: 8vh 0;
+    }
+  }
+}
+
+section.live-websites {
+  background-color: #b8de8c;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-basis: 100%;
+  h2.title {
+    width: 100%;
+    text-align: center;
+    flex-basis: 100%;
+    margin: 0;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    font-size: 3.8em;
+  }
+  div.website {
+    margin: 8vh 0;
+    text-align: center;
+    a {
+      text-decoration: none;
+      color: white;
+      display: block;
+      font-size: 2em;
+      border-bottom: 4px solid white;
+      border-left: 4px solid white;
+      border-right: 4px solid white;
+      padding: .2em;
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}
+
+section#contact {
+  background-image: url('../images/computer.jpg');
+  height: 90vh;
+  text-align: center;
+  div.row {
+    width: 60vw;
+    padding: 10vh 0 10vh 0;
+  }
+  input {
+    color: white;
+  }
+  textarea {
+    color: white;
+  }
+  /* label focus color */
+  .input-field input[type=text]:focus + label,
+  .input-field input[type=email]:focus + label,
+  .input-field textarea:focus + label {
+    color: white;
+  }
+  /* label underline focus color */
+  .input-field input[type=text]:focus, .input-field input[type=email]:focus, .input-field textarea:focus {
+    border-bottom: 1px solid white;
+    box-shadow: 0 1px 0 0 white;
+  }
+  button {
+    background-color: #4ba04e;
+    svg {
+      font-size: 1em;
+      margin: 0;
+    }
+  }
+  h2 {
+    font-size: 2.5em;
+  }
+  a {
+    color: white;
+  }
+  svg {
+    font-size: 3em;
+    margin: 0 1vw;
+  }
+}
+
+footer {
+  background-color: #424242;
+  color: rgba(255,255,255,0.8);
+  padding: 1.5em;
+  font-size: .8em;
+  text-align: center;
+  display: block;
+}
