@@ -3,10 +3,10 @@ include_once "index.html";
 
 $webmaster_email = "nicholasmprieto@gmail.com";
 
-$email = $_REQUEST['email'];
-$message = $_REQUEST['message'];
-$firstname = $_REQUEST['firstname'];
-$lastname = $_REQUEST['lastname'];
+$firstname = $_POST['firstname'];
+$lastname = $_POST['lastname'];
+$email = $_POST['email'];
+$message = $_POST['message'];
 $txt =
 "Name: " . $firstname . " " . $lastname . "\r\n" .
 "Email: " . $email . "\r\n" .

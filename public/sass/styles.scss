@@ -96,7 +96,7 @@ header.para1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 45vh;
+    padding-top: 40vh;
     text-transform: uppercase;
     h3 {
       font-size: 1.2em;
@@ -109,6 +109,14 @@ header.para1 {
       margin: 0;
       letter-spacing: .95em;
       font-weight: bold;
+    }
+    div.links {
+      display: flex;
+      font-size: 3em;
+      a {
+        color: white;
+        margin: 0 .2em;
+      }
     }
   }
   div.arrow {

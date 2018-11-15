@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/materialize.min.css">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/all.min.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="../public/css/materialize.min.css">
+  <link rel="stylesheet" href="../public/css/normalize.css">
+  <link rel="stylesheet" href="../public/css/all.min.css">
+  <link rel="stylesheet" href="../public/css/styles.css">
   <title>Nick's Dev Journey</title>
 </head>
 <body>
   <!--Navigation-->
   <nav class="transparent z-depth-0">
-    <img src="images/logo.png" alt="logo">
+    <img src="../public/images/logo.png" alt="logo">
     <a class="animation" href="#contact">Contact</a>
     <a class="animation" href="#projects">Projects</a>
     <a class="animation" href="#about">About</a>
@@ -24,6 +24,10 @@
     <div class="header-title">
         <h3>A Nicholas Prieto Production</h3>
         <h1>The Journey</h1>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/nickprieto" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.github.com/NickDark" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
     </div>
     <div class="arrow"><i class="fa fa-chevron-down" aria-hidden="true"></i></div>
   </header>
@@ -38,56 +42,57 @@
     <section class="website-designs scrollspy" id="projects">
       <h2 class="title">Website Designs</h2>
       <div class="design">
-        <img class="responsive-img materialboxed" width="300" src="images/1-LiveStream.png" alt="website design for live streaming app">
+        <img class="responsive-img materialboxed" width="300" src="../public/images/1-LiveStream.png" alt="website design for live streaming app">
       </div>
     </section>
     <section class="live-websites">
       <h2 class="title">Live Websites</h2>
       <div class="website">
-        <img class="responsive-img materialboxed" width="500" src="images/yelpcamp.png" alt="yelpcamp">
+        <img class="responsive-img materialboxed" width="500" src="../public/images/yelpcamp.png" alt="yelpcamp">
         <a class="waves-effect" href="https://yelpcamp-3.herokuapp.com/" target="_blank">Visit</a>
       </div>
       <div class="website">
-        <img class="responsive-img materialboxed" width="500" src="images/realtime-chat.png" alt="realtime chat app">
+        <img class="responsive-img materialboxed" width="500" src="../public/images/realtime-chat.png" alt="realtime chat app">
         <a class="waves-effect" href="https://chat-app-3.herokuapp.com/" target="_blank">Visit</a>
       </div>
     </section>
     <section class="parallax-img para3 scrollspy" id="contact">
       <div class="row">
-        <form class="col s12" action="php/contact.php" method="POST">
+        {{msg}}
+        <form class="col s12" action="send" method="POST">
           <div class="input-field col s6">
-            <input class="validate" id="firstname" type="text">
+            <input class="validate" id="firstname" name="firstname" type="text" required>
             <label for="firstname">First Name</label>
           </div>
           <div class="input-field col s6">
-            <input class="validate" id="lastname" type="text">
+            <input class="validate" id="lastname" name="lastname" type="text" required>
             <label for="lastname">Last Name</label>
           </div>
           <div class="input-field col s12">
-            <input class="validate" type="email" id="email">
+            <input class="validate" type="email" id="email" name="email" required>
             <label for="email">Email</label>
           </div>
           <div class="input-field col s12">
-            <textarea class="materialize-textarea validate" id="message"></textarea>
+            <textarea class="materialize-textarea validate" id="message" name="message" required></textarea>
             <label for="message">Message</label>
           </div>
-          <button class="btn waves-effect">Submit
+          <button class="btn waves-effect" name="submit">Submit
             <i class="fa fa-paper-plane"></i>
           </button>
         </form>
       </div>
       <h2>Connect</h2>
       <a href="https://www.linkedin.com/in/nickprieto" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://www.github.com/NickDark" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.github.com/NickDark" target="_blank"><i class="fab fa-github-square"></i></a>
     </section>
   </main>
   <!--Footer-->
   <footer>
     <span>&copy; Nicholas Prieto 2018</span>
   </footer>
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/materialize.min.js"></script>
-  <script src="js/all.min.js"></script>
-  <script src="js/init.js"></script>
+  <script src="../public/js/jquery-3.3.1.min.js"></script>
+  <script src="../public/js/materialize.min.js"></script>
+  <script src="../public/js/all.min.js"></script>
+  <script src="../public/js/init.js"></script>
 </body>
 </html>

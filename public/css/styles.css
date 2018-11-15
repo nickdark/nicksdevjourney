@@ -96,7 +96,7 @@ header.para1 div.header-title {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 45vh;
+  padding-top: 40vh;
   text-transform: uppercase;
 }
 
@@ -112,6 +112,18 @@ header.para1 div.header-title h1 {
   margin: 0;
   letter-spacing: .95em;
   font-weight: bold;
+}
+
+header.para1 div.header-title div.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 3em;
+}
+
+header.para1 div.header-title div.links a {
+  color: white;
+  margin: 0 .2em;
 }
 
 header.para1 div.arrow {
@@ -308,4 +320,3 @@ footer {
   text-align: center;
   display: block;
 }
-/*# sourceMappingURL=styles.css.map */
