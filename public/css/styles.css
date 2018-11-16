@@ -388,4 +388,7 @@ footer {
     width: 80vw;
     padding: 5vh 0 5vh 0;
   }
+  body main section#contact div.row button {
+    padding: 0 2em;
+  }
 }
