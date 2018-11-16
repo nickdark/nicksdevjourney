@@ -131,7 +131,7 @@ header.para1 div.arrow {
   font-size: 2.8em;
   color: white;
   text-align: center;
-  top: 40.5vh;
+  top: 38vh;
   right: .4em;
 }
 
@@ -361,7 +361,7 @@ footer {
   }
   body header {
     text-align: center;
-    font-size: .8em;
+    font-size: .55em;
   }
   body main section#about p.flow-text {
     text-align: center;
