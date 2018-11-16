@@ -19,7 +19,7 @@
 body {
   font-family: 'Roboto-Regular', sans-serif;
   color: white;
-  font-size: 1vw;
+  font-size: 100%;
 }
 
 .parallax-img {
@@ -31,9 +31,8 @@ body {
 
 nav {
   position: absolute;
-  display: block;
   z-index: 1;
-  padding: 1vw 2vw 1vw 1vw;
+  padding: 1em;
 }
 
 nav img {
@@ -108,7 +107,7 @@ header.para1 div.header-title h3 {
 }
 
 header.para1 div.header-title h1 {
-  font-size: 4.5em;
+  font-size: 4em;
   margin: 0;
   letter-spacing: .95em;
   font-weight: bold;
@@ -118,12 +117,13 @@ header.para1 div.header-title div.links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 3em;
+  font-size: 3.5em;
+  margin-top: .2em;
 }
 
 header.para1 div.header-title div.links a {
   color: white;
-  margin: 0 .2em;
+  margin: 0 .3em;
 }
 
 header.para1 div.arrow {
@@ -131,7 +131,7 @@ header.para1 div.arrow {
   font-size: 2.8em;
   color: white;
   text-align: center;
-  top: 42vh;
+  top: 40.5vh;
   right: .4em;
 }
 
@@ -319,4 +319,60 @@ footer {
   font-size: .8em;
   text-align: center;
   display: block;
+}
+
+@media only screen and (max-width: 740px) {
+  body {
+    font-size: 100%;
+  }
+  body nav {
+    text-align: center;
+  }
+  body nav a.sidenav-trigger {
+    position: absolute;
+    left: 4vw;
+    font-size: 2em;
+  }
+  body nav img {
+    font-size: 1em;
+  }
+  body ul.sidenav li > div.user-view {
+    height: 20vh;
+    position: relative;
+  }
+  body ul.sidenav li > div.user-view img {
+    width: 100%;
+  }
+  body ul.sidenav li > div.user-view div.bottom-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    line-height: 1.7em;
+  }
+  body ul.sidenav li > a {
+    font-size: 1.5em;
+    z-index: 100;
+  }
+  body header {
+    text-align: center;
+    font-size: .8em;
+  }
+  body main section#about p.flow-text {
+    text-align: center;
+    font-size: .8em;
+  }
+  body main section.website-designs, body main section.live-websites {
+    font-size: .7em;
+    padding: 2em;
+  }
+  body main section#contact div.row {
+    width: 80vw;
+    padding: 5vh 0 5vh 0;
+  }
 }
