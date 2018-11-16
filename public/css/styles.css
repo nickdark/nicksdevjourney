@@ -363,9 +363,13 @@ footer {
     text-align: center;
     font-size: .55em;
   }
+  body header div > div > a {
+    font-size: 1.6em;
+  }
   body main section#about p.flow-text {
     text-align: center;
-    font-size: .8em;
+    font-size: .9em;
+    padding: 2em 5em;
   }
   body main section.website-designs, body main section.live-websites {
     font-size: .7em;
