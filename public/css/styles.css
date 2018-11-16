@@ -331,6 +331,9 @@ footer {
     background-attachment: fixed;
     background-repeat: no-repeat;
   }
+  body div.sidenav-overlay {
+    position: static;
+  }
   body nav {
     text-align: center;
   }

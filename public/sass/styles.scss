@@ -276,6 +276,9 @@ footer {
       background-attachment: fixed;
       background-repeat: no-repeat;
     }
+    div.sidenav-overlay {
+      position: static;
+    }
     nav {
       text-align: center;
       a.sidenav-trigger {
