@@ -270,6 +270,12 @@ footer {
 @media only screen and (max-width: 740px) {
   body {
     font-size: 100%;
+    .parallax-img {
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
     nav {
       text-align: center;
       a.sidenav-trigger {
@@ -302,11 +308,14 @@ footer {
         z-index: 100;
       }
     }
-    header {
+    header.para1 {
       text-align: center;
       font-size: .55em;
       div > div > a {
         font-size: 1.6em;
+      }
+      div.arrow {
+        top: 30vh;
       }
     }
     main {
