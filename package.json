@@ -19,6 +19,9 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
+    "grunt": "^1.0.3",
+    "grunt-contrib-imagemin": "^3.1.0",
+    "imagemin-pngquant": "^6.0.0",
     "nodemailer": "^4.6.8"
   }
 }
