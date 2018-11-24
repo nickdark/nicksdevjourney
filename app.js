@@ -2,9 +2,13 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const exphbs = require('express-handlebars');
 const nodemailer = require('nodemailer');
+const compression = require('compression');
 const path = require('path');
 
 const app = express();
+
+// Compress text files
+app.use(compression());
 
 // View engine setup
 app.engine('handlebars', exphbs());
@@ -55,12 +59,12 @@ app.post('/send', (req, res) => {
   };
   // send mail with defined transport object
   transporter.sendMail(mailOptions, (error, info) => {
-    if (error) {
-      return console.log(error);
-    }
-    console.log('Message sent: %s', info.messageId);
+    // if (error) {
+    //   return console.log(error);
+    // }
+    // console.log('Message sent: %s', info.messageId);
     // Preview only available when sending through an Ethereal account
-    console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+    // console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
     res.render('index', { msg: 'Email has been sent' });
     // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
     // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
@@ -68,5 +72,5 @@ app.post('/send', (req, res) => {
 });
 
 app.listen(process.env.PORT || 3000, () => {
-  console.log('Listening');
+  // console.log('Listening');
 });
