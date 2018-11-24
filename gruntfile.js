@@ -6,7 +6,7 @@ grunt.initConfig({
   imagemin: {
     options: {
       use: [
-        pngquant({ quality: '50' }),
+        pngquant({ quality: '70' }),
         mozjpeg({ quality: '70' }),
       ],
     },
