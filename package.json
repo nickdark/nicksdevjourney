@@ -22,6 +22,7 @@
     "express-handlebars": "^3.0.0",
     "grunt": "^1.0.3",
     "grunt-contrib-imagemin": "^3.1.0",
+    "imagemin-mozjpeg": "^8.0.0",
     "imagemin-pngquant": "^6.0.0",
     "nodemailer": "^4.6.8"
   }

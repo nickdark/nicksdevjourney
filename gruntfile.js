@@ -1,4 +1,5 @@
 const pngquant = require('imagemin-pngquant');
+const mozjpeg = require('imagemin-mozjpeg');
 const grunt = require('grunt');
 
 grunt.initConfig({
@@ -6,6 +7,7 @@ grunt.initConfig({
     options: {
       use: [
         pngquant({ quality: '50' }),
+        mozjpeg({ quality: '70' }),
       ],
     },
     dynamic: {
