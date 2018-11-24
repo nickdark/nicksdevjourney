@@ -13,9 +13,10 @@ grunt.initConfig({
         cwd: 'public/images/',
         expand: true,
         src: ['**/*.{png, jpg}'],
+        dest: 'public/images/',
       }],
     },
   },
 });
-grunt.loadNpmTasks('grunt-contrib-imagemin');
+grunt.loadNpmTasks('grunt-contrib-imagemin', 'grunt-critical');
 grunt.registerTask('default', ['imagemin']);
