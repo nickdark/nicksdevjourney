@@ -55,10 +55,9 @@ nav {
 }
 
 header.para1 {
-  background-image: url(../images/roads.jpg);
+  background-image: url(../images/roads-small.jpg);
   height: 100vh;
   width: 100%;
-  opacity: .95;
   div.header-title {
     display: flex;
     flex-direction: column;
@@ -123,12 +122,12 @@ main {
   }
 
   div.para2 {
-    background-image: url('../images/ocean.jpg');
+    background-image: url('../images/books-large.jpg');
     height: 80vh;
   }
 
   section.website-designs {
-    background-color: #82CFC7;
+    background-color: #313131;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -149,8 +148,14 @@ main {
   }
 }
 
+hr {
+  border-color: #ffffff59;
+  margin: 0;
+  background-color: #313131;
+}
+
 section.live-websites {
-  background-color: #b8de8c;
+  background-color: #313131;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -177,14 +182,14 @@ section.live-websites {
       border-right: 4px solid white;
       padding: .2em;
       &:hover {
-        background-color: rgba(0, 0, 0, 0.1);
+        background-color: rgba(0, 0, 0, 0.35);
       }
     }
   }
 }
 
 section#contact {
-  background-image: url('../images/computer.jpg');
+  background-image: url('../images/computer-large.jpg');
   height: 90vh;
   text-align: center;
   div.row {
@@ -234,6 +239,43 @@ footer {
   font-size: .8em;
   text-align: center;
   display: block;
+}
+
+/* Media Queries */
+@media screen and (min-width: 0px) {
+  header.para1 {
+    background-image: url(../images/roads-small.jpg);
+  }
+  section#contact {
+    background-image: url('../images/computer-small.jpg');
+  }
+  div.para2 {
+    background-image: url('../images/books-small.jpg');
+  }
+}
+
+@media screen and (min-width: 400px) {
+  header.para1 {
+    background-image: url(../images/roads-medium.jpg);
+  }
+  section#contact {
+    background-image: url('../images/computer-medium.jpg');
+  }
+  div.para2 {
+    background-image: url('../images/books-medium.jpg');
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  header.para1 {
+    background-image: url(../images/roads-large.jpg);
+  }
+  section#contact {
+    background-image: url('../images/computer-large.jpg');
+  }
+  div.para2 {
+    background-image: url('../images/books-large.jpg');
+  }
 }
 
 @media only screen and (max-width: 992px) {
