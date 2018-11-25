@@ -35,7 +35,7 @@
     <li><div class="divider"></div></li>
     <li><a href="#contact" class="waves-effect" ><i class="far fa-comment-alt"></i> Contact</a></li>
     <li><div class="divider"></div></li>
-    <li><a href="#" class="waves-effect" ><i class="far fa-sign-out-alt"></i> Close</a></li>
+    <li><a href="#" class="waves-effect" ><i class="fas fa-sign-out-alt"></i> Close</a></li>
   </ul>
 
 
@@ -45,7 +45,8 @@
         <h3>A Nicholas Prieto Production</h3>
         <h1>The Journey</h1>
         <div class="links">
-          <a href="https://www.linkedin.com/in/nickprieto" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+          <label for="linkedin-header"></label>
+          <a href="https://www.linkedin.com/in/nickprieto" target="_blank" rel="noopener" name="linkedin-header"><i class="fab fa-linkedin-in"></i></a>
           <a href="https://www.github.com/NickDark" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
         </div>
     </div>
@@ -62,18 +63,18 @@
     <section class="website-designs scrollspy" id="projects">
       <h2 class="title">Website Designs</h2>
       <div class="design">
-        <img class="responsive-img materialboxed lazyload" width="300" src="../public/images/1-LiveStream.png" alt="website design for live streaming app">
+        <img class="responsive-img materialboxed lazyload" width="300" data-src="../public/images/1-LiveStream.png" alt="website design for live streaming app">
       </div>
     </section>
     <hr/>
     <section class="live-websites">
       <h2 class="title">Live Websites</h2>
       <div class="website">
-        <img class="responsive-img materialboxed lazyload" width="500" src="../public/images/yelpcamp.png" alt="yelpcamp">
+        <img class="responsive-img materialboxed lazyload" width="500" data-src="../public/images/yelpcamp.png" alt="yelpcamp">
         <a class="waves-effect" href="https://yelpcamp-3.herokuapp.com/" target="_blank" rel="noopener">Visit</a>
       </div>
       <div class="website">
-        <img class="responsive-img materialboxed lazyload" width="500" src="../public/images/realtime-chat.png" alt="realtime chat app">
+        <img class="responsive-img materialboxed lazyload" width="500" data-src="../public/images/realtime-chat.png" alt="realtime chat app">
         <a class="waves-effect" href="https://chat-app-3.herokuapp.com/" target="_blank" rel="noopener">Visit</a>
       </div>
     </section>
@@ -112,10 +113,10 @@
     <span>&copy; Nicholas Prieto 2018</span>
   </footer>
 
+  <script src="../public/js/lazysizes.min.js" async></script>
   <script src="../public/js/all.min.js" async></script>
   <script src="../public/js/jquery-3.3.1.min.js"></script>
   <script src="../public/js/materialize.min.js"></script>
   <script src="../public/js/init.js"></script>
-  <script src="../public/js/lazysizes.min.js" async></script>
 </body>
 </html>
