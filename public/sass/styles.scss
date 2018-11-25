@@ -15,17 +15,18 @@ body {
 nav {
   position: absolute;
   z-index: 1;
-  padding: 1em;
+  padding: 1.5em;
   img {
     width: 7em;
     vertical-align: middle;
   }
   a {
     float: right;
-    font-size: 1.3em;
-    margin-right: 1.2vw;
+    font-size: 1.2em;
+    margin-right: 2rem;
     padding: 0 .5vw;
     text-transform: uppercase;
+    font-weight: bold;
   }
   .animation {
     color: #fff;
