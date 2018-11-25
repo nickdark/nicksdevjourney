@@ -1,7 +1,7 @@
 {
   "name": "nicksdevjourney-2.0",
-  "version": "1.0.0",
-  "description": "My Website 2.0",
+  "version": "2.3.0",
+  "description": "Nicholas Prieto's Website",
   "main": "app.js",
   "scripts": {
     "lint": "eslint",
