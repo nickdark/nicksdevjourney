@@ -4,8 +4,10 @@ const exphbs = require('express-handlebars');
 const nodemailer = require('nodemailer');
 const compression = require('compression');
 const path = require('path');
+const enforce = require('express-sslify');
 
 const app = express();
+app.use(enforce.HTTPS({ trustProtoHeader: true }));
 
 // Compress text files
 app.use(compression());
